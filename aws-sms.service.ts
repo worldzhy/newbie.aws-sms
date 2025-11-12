@@ -38,9 +38,7 @@ export class AwsSmsService {
     this.client = new PinpointSMSVoiceV2Client(clientConfig);
   }
 
-  async sendText(
-    params: SendTextMessageParams
-  ): Promise<SendTextMessageCommandOutput> {
+  async sendText(params: SendTextMessageParams): Promise<SendTextMessageCommandOutput> {
     const commandInput: SendTextMessageCommandInput = {
       DestinationPhoneNumber: params.phoneNumber,
       MessageType: 'TRANSACTIONAL',
