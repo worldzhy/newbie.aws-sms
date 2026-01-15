@@ -14,7 +14,7 @@
     "AWS_SMS_CONFIGURATION_SET_NAME": ""
   },
   "dependencies": {
-    "@aws-sdk/client-pinpoint-sms-voice-v2": "^3.839.0"
+    "@aws-sdk/client-pinpoint-sms-voice-v2": "latest"
   },
   "devDependencies": {}
 }
